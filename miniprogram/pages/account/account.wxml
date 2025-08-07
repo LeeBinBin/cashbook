@@ -1,0 +1,38 @@
+<view class="content">
+  <view class="line"></view>
+  <view class="stat">
+    <view>净资产</view>
+    <view class="count">{{total}}</view>
+    <view class="total">
+      <text>负债：0</text>
+      <text>总资产：{{total}}</text>
+    </view>
+</view>
+
+
+<view class="title">
+  我的账户（{{count}}）
+</view>
+
+<view class="items">
+  <block wx:for="{{account}}" wx:key="item">
+  <view class="item" bind:tap="seeDetail" data-id="{{item._id}}" data-balance="{{item.balance}}">
+    <view class="before">
+        <image src="{{item.icon}}" style="width:30px;height:30px" />
+        <view>
+          <view>{{item.name}}</view>
+          <view class="desc">{{item.remark}}</view>
+        </view>
+    </view>
+    <view class="after">{{item.balance}}</view>
+    </view>
+
+  </block>
+</view>
+
+  <view class="add" bind:tap="add">
+    <!-- <image src="/images/account/add.jpg"> -->
+    <image src="/images/account/add.jpg" />
+    添加账户
+  </view>
+</view>

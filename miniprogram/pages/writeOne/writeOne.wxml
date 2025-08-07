@@ -1,0 +1,51 @@
+<form bindsubmit="formSubmit">
+  <view class="content">
+    <!-- 交易类型 -->
+    <view class="line"></view>
+    <view class="item">
+      <view>交易类型</view>
+      <radio-group bindchange="radioChange" name="type">
+        <radio value="0" checked>收入</radio>
+        <radio value="1">支出</radio>
+      </radio-group>
+    </view>
+    <!-- 交易日期 -->
+    <view class="line"></view>
+    <view class="item">
+      <view>交易日期</view>
+      <view class="tui-picker-detail" bindtap="openPicker">
+    {{ tradeDate || '请选择日期' }} <!-- 显示选中的日期或提示文字 -->
+  </view>
+  <!-- 日期选择器（默认隐藏，选中后关闭） -->
+  <van-datetime-picker 
+    wx:if="{{isShowPicker}}" 
+    type="datetime" 
+    value="{{ currentDate }}" 
+    min-date="{{ minDate }}" 
+    max-date="{{ maxDate }}" 
+    bind:input="onInput" 
+    bind:confirm="onConfirm"  
+    bind:cancel="onCancel"    
+  />
+</view>
+    </view>
+    <!-- 交易金额 -->
+    <view class="line"></view>
+    <view class="item">
+      <view>交易金额</view>
+      <input type="text" name="balance" placeholder="0.00" placeholder-class="holder" />
+    </view>
+    <!-- 备注 -->
+    <view class="line"></view>
+    <view class="item">
+      <view>备注</view>
+      <input type="text" name="remark" placeholder="选填" placeholder-class="holder" />
+    </view>
+
+    <!-- 记一笔提交 -->
+    <view class="line"></view>
+    <view class="btn">
+      <button form-type="submit">记一笔</button>
+    </view>
+  </view>
+</form>

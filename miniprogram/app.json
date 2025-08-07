@@ -1,0 +1,37 @@
+{
+  "pages": [
+    "pages/account/account",
+    "pages/accountBook/accountBook",
+    "pages/createAccount/createAccount",
+    "pages/accountDetail/accountDetail",
+    "pages/writeOne/writeOne"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "云开发 QuickStart",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#999999",
+    "selectedColor": "#FFD700",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+      "pagePath": "pages/account/account",
+      "text": "账户",
+      "iconPath": "/images/bar/account-0.jpg",  
+      "selectedIconPath": "/images/bar/account-1.jpg"
+      },
+      {
+        "pagePath": "pages/accountBook/accountBook",
+        "text": "账本",
+        "iconPath": "/images/bar/book-0.jpg",  
+        "selectedIconPath": "/images/bar/book-1.jpg"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}

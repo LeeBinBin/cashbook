@@ -1,0 +1,46 @@
+<form bindsubmit="formSubmit">
+  <view class="content">
+  <!-- 账户类型 -->
+    <view class="line"></view>
+    <view class="item">
+      <view>账户类型</view>
+      <view>
+        <radio-group bindchange="radioChange" name="id">
+          <radio value="0" checked>现金</radio>
+          <radio value="1">支付宝</radio>
+          <radio value="2">微信</radio>
+        </radio-group>
+      </view>
+    </view>
+  <!-- 账户名称 -->
+    <view class="line"></view>
+    <view class="item">
+      <view>账户名称</view>
+      <view>
+      <input type="text" placeholder="请填写(10字以内)" placeholder-class="holder" name="name"/>
+      </view>
+    </view>
+  <!-- 余额 -->
+    <view class="line"></view>
+    <view class="item">
+      <view>余额</view>
+      <view>
+      <input type="text" placeholder="0.00" placeholder-class="holder" name="balance"/>
+      </view>
+    </view>
+
+  <!-- 备注 -->
+  <view class="line"></view>
+    <view class="item">
+      <view>备注</view>
+      <view>
+      <input type="text" placeholder="选填" placeholder-class="holder" name="remark"/>
+      </view>
+    </view>
+    <!-- 创建 -->
+    <view class="line"></view>
+    <view class="btn">
+      <button form-type="submit">创建</button>
+    </view>
+  </view>
+</form>

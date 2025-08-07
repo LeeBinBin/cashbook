@@ -1,0 +1,37 @@
+.content {
+  background-color: #fff;
+  height: 1400rpx;
+}
+.line {
+  height: 2rpx;
+  width: 100%;
+  background-color: #666;
+  opacity: 0.2;
+}
+.item {
+  display: flex;
+  padding: 20rpx;
+  font-size: 26rpx;
+  align-items: center;
+  justify-content: space-between;
+}
+.item radio {
+  margin-right: 20rpx;
+}
+.holder {
+  text-align: right;
+  font-size: 25rpx;
+  color: #b5b5bb;
+}
+.btn {
+  padding: 20rpx;
+  text-align: center;
+  align-items: center;
+}
+
+.btn button {
+  background-color: #ffd700;
+  width: 90%;
+  height: 80rpx;
+  border-radius: 40rpx;
+}

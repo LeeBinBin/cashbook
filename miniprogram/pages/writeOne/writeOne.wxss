@@ -1,0 +1,53 @@
+.line {
+  height: 2rpx;
+  width: 100%;
+  background-color: #666;
+  opacity: 0.2;
+}
+.item {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 20rpx;
+  font-size: 26rpx;
+  align-items: center;
+}
+.item radio {
+  margin-right: 20rpx;
+}
+.item input {
+  text-align: right;
+}
+.holder {
+  font-size: 20rpx;
+  color: #b5b5b5;
+}
+.btn {
+  padding-top: 20rpx;
+  text-align: center;
+}
+.btn button {
+  width: 90%;
+  border-radius: 40rpx;
+  background-color: #ffd700;
+  height: 80rpx;
+}
+/* 在现有样式基础上添加/修改 */
+.item {
+  /* 确保容器有足够宽度 */
+  width: 100%;
+  box-sizing: border-box; /* 避免padding导致宽度溢出 */
+}
+
+.tui-picker-detail {
+  white-space: nowrap; /* 强制不换行 */
+  overflow: hidden;    /* 隐藏溢出内容 */
+  text-overflow: ellipsis; /* 溢出时显示省略号 */
+  max-width: 550rpx;   /* 增加最大宽度（根据实际需求调整） */
+  padding-right: 10rpx; /* 右侧预留空间 */
+}
+.item picker {
+  flex: 1;             /* 确保占据右侧所有可用空间 */
+  display: flex;
+  justify-content: flex-end;
+}

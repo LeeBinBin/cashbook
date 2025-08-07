@@ -1,0 +1,19 @@
+<view class="line"></view>
+<view class="balance">账户余额：{{balance}}</view>
+<view class="hr"></view>
+<view class="title">账户明细</view>
+<view class="line"></view>
+
+<block wx:for="{{accountDetails}}" wx:key="item">
+  <view class="item">
+      <view class="date">{{item.tradeDate}}</view>
+      <view class="{{item.type == 0?'trade_in':'trade_out'}}">
+      {{item.type == 0?'收入':'支出'}}{{item.balance}}</view>
+      <view>{{item.totalBalance}}</view>
+  </view>
+  <view class="line"></view>
+</block>
+
+<view class="bg">
+  <view class="writeOne" bind:tap="writeOne">记一笔</view>
+</view>
