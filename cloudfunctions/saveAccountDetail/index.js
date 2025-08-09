@@ -10,7 +10,7 @@ exports.main = async (event, context) => {
         balance:event.balance,
         totalBalance:event.totalBalance,
         type:event.type,
-        openid:wxContext.OPENID
+        _openid:wxContext.OPENID
     }
   })
   return result

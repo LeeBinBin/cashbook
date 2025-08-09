@@ -1,1 +1,42 @@
-/* pages/accountBook/accountBook.wxss */
+.line {
+  height: 2rpx;
+  width: 100%;
+  background-color: #666666;
+  opacity: 0.2;
+}
+.item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 20rpx;
+}
+.name {
+  display: flex;
+}
+.book {
+  height: 140rpx;
+  line-height: 80rpx;
+  text-align: start;
+}
+.typeName{
+  font-size: 30rpx;
+}
+.name image{
+  margin-right: 20rpx;
+}
+.desc {
+  font-size: 24rpx;
+  color: #b5b5a6;
+}
+.count {
+  font-size: 24rpx;
+  color: #b5b5a6;
+}
+.btn{
+  text-align: right;
+  padding: 20rpx;
+  font-size: 30rpx;
+  color: #3e13da;
+}

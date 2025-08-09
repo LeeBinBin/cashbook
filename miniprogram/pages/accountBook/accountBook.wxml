@@ -1,2 +1,20 @@
-<!--pages/accountBook/accountBook.wxml-->
-<text>pages/accountBook/accountBook.wxml</text>
+<view class="content">
+  <block wx:for="{{books}}" wx:key="item">
+    <view class="line"></view>
+    <view class="item">
+     <!-- 左边部分 -->
+     <view class="name">
+        <image src="{{item.icon}}" style="height: 140rpx;width: 130rpx;"/>
+        <view class="book">
+          <view class="typeName">{{item.typeName}}</view>
+          <view class="desc">{{item.name}}</view>
+        </view>
+     </view>
+      <!-- 右边部分 -->
+      <view class="count">共0笔账单</view>
+    </view>
+  </block>
+
+  <view class="line"></view>
+  <view class="btn" bind:tap="createBook">+ 创建记账本</view>
+</view>

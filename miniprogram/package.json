@@ -11,8 +11,9 @@
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
+    "@babel/runtime": "^7.28.2",
     "@vant/weapp": "^1.11.7",
-    "datetimepicker": "^0.1.39"
-  },
-  "devDependencies": {}
+    "datetimepicker": "^0.1.39",
+    "jquery": "^3.7.1"
+  }
 }

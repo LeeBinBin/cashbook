@@ -9,37 +9,30 @@
         <radio value="1">支出</radio>
       </radio-group>
     </view>
+
     <!-- 交易日期 -->
     <view class="line"></view>
     <view class="item">
       <view>交易日期</view>
-      <view class="tui-picker-detail" bindtap="openPicker">
-    {{ tradeDate || '请选择日期' }} <!-- 显示选中的日期或提示文字 -->
-  </view>
-  <!-- 日期选择器（默认隐藏，选中后关闭） -->
-  <van-datetime-picker 
-    wx:if="{{isShowPicker}}" 
-    type="datetime" 
-    value="{{ currentDate }}" 
-    min-date="{{ minDate }}" 
-    max-date="{{ maxDate }}" 
-    bind:input="onInput" 
-    bind:confirm="onConfirm"  
-    bind:cancel="onCancel"    
-  />
-</view>
+      <view>
+        <picker mode="datetime" start="2000-01-01 00:00" end="2030-12-31 23:59" value="{{dateTime}}" bindchange="onDateTimeChange">
+          <view>{{tradeDate}}</view>
+        </picker>
+      </view>
     </view>
+
     <!-- 交易金额 -->
     <view class="line"></view>
     <view class="item">
       <view>交易金额</view>
       <input type="text" name="balance" placeholder="0.00" placeholder-class="holder" />
     </view>
+
     <!-- 备注 -->
     <view class="line"></view>
     <view class="item">
       <view>备注</view>
-      <input type="text" name="remark" placeholder="选填" placeholder-class="holder" />
+      <input type="text" name="remark" placeholder='选填' placeholder-class="holder" />
     </view>
 
     <!-- 记一笔提交 -->

@@ -32,7 +32,7 @@ Page({
     const accountId = this.data.id
     const balance = this.data.balance
     wx.navigateTo({
-      url: `../writeOne/writeOne? accountId=${accountId}&balance=${balance}`,
+      url: `../writeOne/writeOne?accountId=${accountId}&balance=${balance}`,
     })
   }
 

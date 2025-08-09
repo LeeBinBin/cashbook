@@ -1,3 +1,6 @@
 /cloudfunctions/login/node_modules
 /miniprogram/miniprogram_npm
 /miniprogram/node_modules
+/node_modules
+project.private.config.json
+project.private.config.json
