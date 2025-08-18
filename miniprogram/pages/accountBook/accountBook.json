@@ -1,5 +1,7 @@
 {
   "usingComponents": {},
   "navigationBarTitleText": "记账本",
-  "enablePullDownRefresh": true
+  "enablePullDownRefresh":true,
+  "backgroundColor": "#efefef",
+  "backgroundTextStyle":"dark"
 }

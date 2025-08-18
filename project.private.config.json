@@ -22,6 +22,13 @@
     "miniprogram": {
       "list": [
         {
+          "name": "pages/accountBook/accountBook",
+          "pathName": "pages/accountBook/accountBook",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
           "name": "pages/writeOne/writeOne",
           "pathName": "pages/writeOne/writeOne",
           "query": "",
